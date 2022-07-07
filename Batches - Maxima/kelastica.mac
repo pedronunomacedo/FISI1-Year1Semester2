@@ -1,0 +1,24 @@
+/*
+	Para problemas do tipo:
+Quando um cilindro com massa 120g é pendurado de uma mola vertical, fica em equilíbrio a uma altura de 30cm.
+Se o cilindro é substituído por outro com massa de 128g, fica em equilíbrio a uma altura de 23cm.
+Calcule a constante elástica da mola.
+Solução deste para testar: 1120mN/m = 1.120N/m
+
+-ss
+*/
+
+k():=(
+		massa1: read ("introduza a primeira massa"),
+		massa2: read ("introduza a segunda massa"),
+		altura1: read ("introduza a altura do objeto 1."),
+		altura2: read ("introduza a altura do objeto 2."),
+		gravidade: read("introduza a gravidade"),
+		
+		forca1: massa1*gravidade = k*(altura-altura1),
+		forca2: massa2*gravidade = k*(altura-altura2),
+		solucao: solve([forca1,forca2]),
+		
+		
+		print(solucao[1][1])
+		)$

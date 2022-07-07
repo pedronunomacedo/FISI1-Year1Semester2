@@ -1,0 +1,39 @@
+/*
+	Para problemas do tipo:
+Na figura, a mola elástica é usada para manter a barra na posição horizontal.
+Sabendo que a constante elástica da mola é igual a 500 N/m e o seu comprimento, quando não está comprida nem esticada, é 15cm,
+calcule a eneriga elástica da mola na situação ilustrada na figura.
+
+Figura é:
+|\
+| \ -> mola
+|  \
+|-----------O  peso na ponta da barra
+|
+|
+
+Em que a medida do lado esquerdo, na vertical é 12cm, e a distância até à ligação da mola é 16cm e depois desta ligação é 20cm.
+
+Lado 1: 0.12
+Lado 2: 0.16
+
+Resultado: 0.6250J = 625mJ
+
+-ss
+*/
+
+
+
+elastica():=(
+
+	print (""),
+	print ("Fórmula 1/2*k*s^2"),
+	print (""),
+	k: read ("Constante elástica: "),
+	n: read ("comprimento normal: "),
+	l1: read ("lado 1: "),
+	l2: read ("lado 2: "),
+	h: sqrt (l1^2+l2^2)-n,
+	print ("Energia elastica: "),
+	U: (1/2*k*h^2)
+	)$
